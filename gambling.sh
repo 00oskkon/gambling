@@ -18,7 +18,7 @@ response=""
 
 while [ "$playAgain" == 0 ]
 do
-	number=$(("$min" + $RANDOM % "$max"))
+	number=$(($RANDOM % ($max - $min + 1) + $min))
  	score=$(($max+1))
 	#echo "$number"
 	
