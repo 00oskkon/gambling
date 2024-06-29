@@ -5,7 +5,7 @@
 #alias zenity='zenity 2> >(grep -v Gtk-WARNING >&2)'
 
 # Check Dependencies
-if ! [ -x "$(command -v zenity)" ]; then
+if ! [ -x "$(command -v /usr/bin/zenity)" ]; then
 	send_notify "zenity not installed"
 	exit 1
 fi
