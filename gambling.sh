@@ -14,12 +14,12 @@ playAgain=0
 min=1
 max=100
 guess=0
-score=$(($max+1))
 response=""
 
 while [ "$playAgain" == 0 ]
 do
 	number=$(("$min" + $RANDOM % "$max"))
+ 	score=$(($max+1))
 	#echo "$number"
 	
 	while [ "$guess" != "$number" ]
